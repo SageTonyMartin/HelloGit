@@ -12,6 +12,7 @@ namespace HelloGit
         {
             Console.WriteLine("Hello, Git! You're wonderful!");
             Console.WriteLine("*** You have been modified for the better ***");
+            Console.WriteLine("Merge worked like a champ.");
             Console.ReadKey();
         }
     }
