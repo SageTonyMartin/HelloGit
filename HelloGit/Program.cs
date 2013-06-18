@@ -20,14 +20,16 @@ namespace HelloGit
         public static string GetFortune()
         {
             Random rnd = new Random();
-            int whichFortune = rnd.Next(1, 3);
+            int whichFortune = rnd.Next(1, 4);
+            string fortune =  "No fortune for you!";
             switch (whichFortune)
             {
-                case 1: return "You will meet a tall, dark, stranger. When you do, RUN."; break;
-                case 2: return "You are still hungry. Order more Chinese food."; break;
-                case 3: return "The only danger is your own stupidity."; break;
-                default: return "No fortune for you!"; break;
+                case 1: fortune = "You will meet a tall, dark, stranger. When you do, RUN."; break;
+                case 2: fortune = "You are still hungry. Order more Chinese food."; break;
+                case 3: fortune = "The only danger is your own stupidity."; break;
+                default: break;
             }
+            return fortune;
         }
     }
 }
